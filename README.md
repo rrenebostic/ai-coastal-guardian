@@ -9,7 +9,7 @@
 
 ## The AI Coastal Guardian Project ##
 
-*Leveraging Claude AI, NOAA Tide Data through the Model Context Protocol (MCP), and AI Agents for Email Alerts for Enhanced Beach Experiences*
+*Leveraging Claude AI, NOAA Tide Data through the Model Context Protocol (MCP) with integrated AI Agents for an Enhanced Beach Experiences*
 
 ## Project Overview ##
 
