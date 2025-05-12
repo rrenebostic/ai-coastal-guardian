@@ -13,9 +13,14 @@
 
 ## Project Overview ##
 
-AI Coastal Guardian Project aims to transform your coastal adventures by combining the intelligence of Claude AI with real-time NOAA tide data. This project implements a Model Context Protocol (MCP) server that enables Claude AI to access and interpret oceanic information, providing you with personalized recommendations for your beach visits. Additionally, AI Agents will be utilized to automate email alerts for seaweed blooms and other coastal conditions.
+The AI Coastal Guardian Project aims to transform your coastal adventures by combining the intelligence of Claude AI with real-time National Oceanic and Atmospheric Administration (NOAA) tide data. This project implements a Model Context Protocol (MCP) server that enables Claude AI to access and interpret oceanic information, enabling a more coordinated and efficient response to the issues caused by sargassum accumulation. Additionally, AI Agents will be utilized to automate email alerts to the public.
 
-No more arriving at the beach only to find unfavorable tide conditions for your planned activities. In the near future, the AI Coastal Guardian Project will help you plan the perfect coastal getaway by providing intelligent insights about the peak of seawood bloom and safety recommendations.
+No more arriving at the beach only to find unfavorable environmental conditions (See image below). In the near future, the AI Coastal Guardian Project will help you plan the perfect coastal getaway by providing intelligent insights with predictions and alerts when conditions pose a high health risk.
+
+For more details about the launch of the project visit [Medium.com](https://medium.com/@renebostic/wave-hello-to-stress-free-coastal-getaways-with-ai-beach-buddies-claude-ai-noaa-tides-mcp-server-35716624bcc7).
+
+![Photo by Rene Bostic_2025 South Beach Miami Spring Break 2025_Seaweed Bloom](https://github.com/user-attachments/assets/16d47160-311c-4908-baff-49d4844d06ee)
+
 
 ## Key Features ##
 
@@ -42,7 +47,7 @@ The AI Coastal Guardian Project leverages Anthropic's Model Context Protocol (MC
 3.	**Intelligent Processing:** The system applies algorithms to interpret tide data and generate activity recommendations
 4.	**Claude AI Interface:** Users interact with the system through natural language conversations with Claude
 5.	**AI Agent Workflow Automation:** AI Agent workflows to orchestrate the integration between Claude AI and the NOAA Tides MCP Server
-6.	Automated Alerting: The system monitors for conditions that may lead to seaweed blooms and sends email alerts via Gmail
+6.	**Automated Alerting:** The system monitors for conditions that may lead to seaweed blooms and sends email alerts via Gmail
 
 ## Example Interactions ##
 
@@ -134,7 +139,7 @@ The implementation requires a specific technical configuration. This approach le
 
 ## Learn More ##
 
-This project was born from a passion for both AI technology and beach activities. Read more about the development journey and technical details in the full blog post.
+This project was born from a passion for both AI technology and beach activities. Read more about the development journey and technical details by subscribing to [René Bostic Medium articles](https://medium.com/@renebostic/subscribe).
 
 ## Resources ##
 
