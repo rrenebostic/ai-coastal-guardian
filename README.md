@@ -5,11 +5,11 @@
 ![AI Coastal Guardian Data Flow by Rene Bostic_2025](https://github.com/user-attachments/assets/dc28f6aa-11bd-46a4-ba12-565972249341)
 
 
-
-
 ## The AI Coastal Guardian Project ##
 
 *Leveraging Claude AI, NOAA Tide Data through the Model Context Protocol (MCP) with integrated AI Agents for Enhanced Beach Experiences*
+
+<br/>
 
 ## Project Overview ##
 
@@ -21,6 +21,7 @@ For more details about the launch of the project visit [Medium.com](https://medi
 
 ![Photo by Rene Bostic_2025 South Beach Miami Spring Break 2025_Seaweed Bloom](https://github.com/user-attachments/assets/16d47160-311c-4908-baff-49d4844d06ee)
 
+<br/>
 
 ## Key Features ##
 
@@ -38,6 +39,8 @@ For more details about the launch of the project visit [Medium.com](https://medi
 
 •	**AI Agent Workflows:** Leverage an AI Agent Workflow Automation tool for orchestrating Claude AI and NOAA data integrations
 
+<br/>
+
 ## How It Works ##
 
 The AI Coastal Guardian Project leverages Anthropic's Model Context Protocol (MCP) to connect Claude AI with NOAA's Tides and Currents data system:
@@ -48,6 +51,8 @@ The AI Coastal Guardian Project leverages Anthropic's Model Context Protocol (MC
 4.	**Claude AI Interface:** Users interact with the system through natural language conversations with Claude
 5.	**AI Agent Workflow Automation:** AI Agent workflows to orchestrate the integration between Claude AI and the NOAA Tides MCP Server
 6.	**Automated Alerting:** The system monitors for conditions that may lead to seaweed blooms and sends email alerts via Gmail
+
+<br/>
 
 ## Example Interactions ##
 
@@ -65,6 +70,7 @@ The AI Coastal Guardian Project leverages Anthropic's Model Context Protocol (MC
 
 •	"Set up weekly tide reports for my local beach by email."
 
+<br/>
 
 ## Technical Implementation ##
 
@@ -84,6 +90,8 @@ The AI Coastal Guardian Project uses several key technologies:
 
 •	**Email Integration:** Generates and sends automated seaweed bloom alerts via Gmail
 
+<br/>
+
 ## NOAA Data Integration ##
 
 The project connects to several NOAA data endpoints:
@@ -98,6 +106,8 @@ The project connects to several NOAA data endpoints:
 
 •	**Nearby Station Search:** Finding relevant tide stations based on geolocation
 
+<br/>
+
 ## Getting Started ##
 
 The implementation requires a specific technical configuration. This approach leverage no-code/low-code methods:
@@ -105,6 +115,8 @@ The implementation requires a specific technical configuration. This approach le
 **Step 1:** Install the [Claude for Desktop](https://support.anthropic.com/en/articles/10065433-installing-claude-for-desktop).
 
 **Step 2:** [Ryan Cardin](https://github.com/RyanCardin15) is acknowledged for creating the most automated method for installing the NOAA Tides MCP Server. Install the NOAA Tides MCP Server for the Claude Desktop using [Smithery](https://smithery.ai/server/@RyanCardin15/noaa-tidesandcurrents). I used the default setting for the port and transportType and set the applicationName to "NOAA-MCP-Server."
+
+*note:* If the Smithery server is down and your project is urgent, the NOAA Tides and Currents MCP Server installation instructions can be found on [MCP Market](https://mcpmarket.com/server/noaa-tides-and-currents).
 
 **Step 3:** Switch to the Claude Desktop. From the toolbar, select Settings -> Developer -> Edit Config. 
 
@@ -116,8 +128,9 @@ The implementation requires a specific technical configuration. This approach le
 
 ![Integration of Claude AI with NOAA Tides MCP Server](https://github.com/user-attachments/assets/5c482e55-fafc-44d3-8412-8cefe8380594)
 
-
 **Step 7:** Use the prompt "What information is provided from NOAA Tides?"   Claude AI responds with several thought-provoking questions.
+
+<br/>
 
 ## Future Enhancements ##
 
@@ -137,9 +150,78 @@ The implementation requires a specific technical configuration. This approach le
 
 •	Integration with smart home systems for automated morning beach reports
 
+<br/>
+
+## Sample Output ##  
+
+### Prompt ###  
+
+**Summary:**  Claude AI communicates with the noaa-tidesandcurrents MCP Server via JSON scripts.  You can prompt Claude in natural language or directly using JSON.  Communicating with Claude via JSON was confirmed via a prompt.  See image below. 
+
+<img width="774" alt="AI Coastal Guardian_JSON Prompt" src="https://github.com/user-attachments/assets/6b1d7a67-74d2-413b-b653-279ed3475a16" />
+
+<br/>
+
+<br/>
+
+**Prompt 1:** What is the water temperature at station id 8724580?
+
+**Observation 1:**  Claude leverages the NOAA tides data via the noaa-tidesandcurrents MCP Server.  Claude’s first attempt is to determine the correct JSON script necessary to retrieve the requested information.  Once Claude is successful, it provides a comprehensive answer.  See image below.  
+
+<img width="765" alt="AI Coastal Guardian_Water Temperature Prompt" src="https://github.com/user-attachments/assets/5b46f025-0b67-4125-a700-625c1d4531a9" />
+
+
+<br/>
+
+<br/>
+
+**Prompt 2:**  Is the weather conducive for seaweed bloom?
+
+**Observation 2:**  Claude responded in three (3) parts: 
+
+***Part 1 Observation:***  To answer the question, Claude “reasoned” and determined it required (1) both meteorological and ocean data, and (2) multiple factors that influence seaweed bloom including water temperature, nutrient, levels, wind patterns, and ocean currents.  See response below.
+
+<img width="758" alt="AI Coastal Guardian_Seaweed Conditions Part 1" src="https://github.com/user-attachments/assets/8eecb71e-bd00-451d-b374-9f13f4f38306" />
+
+<br/>
+
+<br/>
+
+***Part 2 Observation:*** Claude provides a synopsis  of the water temperature, air temperature, wind conditions, and water levels at Station 8724580.  See response below.
+
+<img width="734" alt="AI Coastal Guardian_Seaweed Conditions Part 2" src="https://github.com/user-attachments/assets/75c8623f-08de-4c2f-9881-ab3d1c38b41a" />
+
+<br/>
+
+<br/>
+
+***Part 3 Observation:*** Claude justifies reaching its conclusion. Details regarding its justification are important when validating the accuracy of the response. See response below.
+
+<img width="761" alt="AI Coastal Guardian_Seaweed Conditions Part 3" src="https://github.com/user-attachments/assets/5f7421dc-d3c0-46c9-bb69-60ace9c94236" />
+
+<br/>
+
+<br/>
+
+**Prompt 3:**  Please write an email to Miami Citizen about the water temperature at station id 8723214. . The tone should be respectful but urgent. Include if the water temperature is conducive for seaweed bloom. The email should be short put complete.
+
+**Observation:** Claude leverages the NOAA tides data and its email writing capabilities to craft the email. After several iterations the following email was generated by Claude. See image below. 
+
+<img width="701" alt="AI Coastal Guardian_email for Station ID 8723214" src="https://github.com/user-attachments/assets/6646bb64-e191-4eb7-8b10-ec01847a5578" />
+
+<br/>
+
+<br/>
+
+**Conclusion:** These are my initial findings.  Please check back often for future output iterations.
+
+<br/>
+
 ## Learn More ##
 
 This project was born from a passion for both AI technology and beach activities. Read more about the development journey and technical details by subscribing to [René Bostic Medium articles](https://medium.com/@renebostic/subscribe).
+
+<br/>
 
 ## Resources ##
 
@@ -152,6 +234,8 @@ This project was born from a passion for both AI technology and beach activities
 •	[n8n Workflow Automation]( https://n8n.io/)
 
 •	[Gmail API Documentation]( https://developers.google.com/gmail/api/guides)
+
+<br/>
 
 ## License ##
 This project is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0)
