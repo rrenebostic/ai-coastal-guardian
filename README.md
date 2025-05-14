@@ -114,7 +114,7 @@ The implementation requires a specific technical configuration. This approach le
 
 **Step 1:** Install the [Claude for Desktop](https://support.anthropic.com/en/articles/10065433-installing-claude-for-desktop).
 
-**Step 2:** [Ryan Cardin](https://github.com/RyanCardin15) is acknowledged for creating the most automated method for installing the NOAA Tides MCP Server. Install the NOAA Tides MCP Server for the Claude Desktop using [Smithery]([https://smithery.ai/server/@RyanCardin15/noaa-tidesandcurrents](https://smithery.ai/server/@RyanCardin15/noaa-tidesandcurrents-mcp)).
+**Step 2:** [Ryan Cardin](https://github.com/RyanCardin15) is acknowledged for creating the most automated method for installing the NOAA Tides MCP Server. Install the NOAA Tides MCP Server for the Claude Desktop using [Smithery](https://smithery.ai/server/@RyanCardin15/noaa-tidesandcurrents-mcp).
 
 *note:* If the Smithery server is down and your project is urgent, the NOAA Tides and Currents MCP Server installation instructions can be found on [MCP Market](https://mcpmarket.com/server/noaa-tides-and-currents).
 
