@@ -114,7 +114,7 @@ The implementation requires a specific technical configuration. This approach le
 
 **Step 1:** Install the [Claude for Desktop](https://support.anthropic.com/en/articles/10065433-installing-claude-for-desktop).
 
-**Step 2:** [Ryan Cardin](https://github.com/RyanCardin15) is acknowledged for creating the most automated method for installing the NOAA Tides MCP Server. Install the NOAA Tides MCP Server for the Claude Desktop using [Smithery](https://smithery.ai/server/@RyanCardin15/noaa-tidesandcurrents). I used the default setting for the port and transportType and set the applicationName to "NOAA-MCP-Server."
+**Step 2:** [Ryan Cardin](https://github.com/RyanCardin15) is acknowledged for creating the most automated method for installing the NOAA Tides MCP Server. Install the NOAA Tides MCP Server for the Claude Desktop using [Smithery]([https://smithery.ai/server/@RyanCardin15/noaa-tidesandcurrents](https://smithery.ai/server/@RyanCardin15/noaa-tidesandcurrents-mcp)).
 
 *note:* If the Smithery server is down and your project is urgent, the NOAA Tides and Currents MCP Server installation instructions can be found on [MCP Market](https://mcpmarket.com/server/noaa-tides-and-currents).
 
@@ -126,7 +126,8 @@ The implementation requires a specific technical configuration. This approach le
 
 **Step 6:** Close the Claude Desktop.  Reopen. You will now see the noaa-tidesandcurrents listed. 
 
-![Integration of Claude AI with NOAA Tides MCP Server](https://github.com/user-attachments/assets/5c482e55-fafc-44d3-8412-8cefe8380594)
+<img width="563" alt="Integration of Claude AI with NOAA Tides MCP Server v2" src="https://github.com/user-attachments/assets/6ddff57e-3f4f-4cb5-a7ab-d20465473827" />
+
 
 **Step 7:** Use the prompt "What information is provided from NOAA Tides?"   Claude AI responds with several thought-provoking questions.
 
@@ -234,6 +235,9 @@ This project was born from a passion for both AI technology and beach activities
 •	[n8n Workflow Automation]( https://n8n.io/)
 
 •	[Gmail API Documentation]( https://developers.google.com/gmail/api/guides)
+
+
+•	[Securing Generative AI for Dummies](https://www.netskope.com/resources/ebooks/securing-generative-ai-for-dummies)
 
 <br/>
 
