@@ -214,7 +214,74 @@ The implementation requires a specific technical configuration. This approach le
 
 <br/>
 
-**Conclusion:** These are my initial findings.  Please check back often for future output iterations.
+**Conclusion:** These are my initial findings.
+
+<br/>
+
+## Sample AI Workflow to Identify Seaweed Bloom Conditions and Create an SMS Alert ##  
+
+### The AI Workflow Prompt ###  
+
+**Lessons Learned**  As I explored different prompts for Claude AI to access NOAA data using either a natural language prompt versus JSON scripts, I determined that incorporating the JSON script directly into the prompt was much more efficient. Below is an example when using a natural language prompt only without a JSON script.  You will notice that Claude AI iterates to generate the optimal JSON script.
+
+<br/>
+
+<img width="648" alt="Claude AI accessing the NOAA Tides MCP Server via Natural Language v2" src="https://github.com/user-attachments/assets/5fb7d312-3139-49d8-8f5e-bcc32d4ceef1" />
+
+<br/>
+
+<br/>
+
+Using a natural language prompt can lead to unnecessary processing time, which can increase carbon emissions. Therefore, incorporating the JSON script directly into the prompt is much more environmentally friendly and produces faster response times. Let’s review the prompt I used to create the SMS text alert.
+
+The goal is to create an AI Workflow to combine the tasks of identifying conditions for seaweed bloom and sending an SMS message to beachgoers.  Therefore, the prompt utilizes a two-step workflow to create distinct processing phases that significantly improve output quality.
+
+<img width="760" alt="Workflow Prompt 1" src="https://github.com/user-attachments/assets/e5138983-5f3e-4eed-85f8-aa732d13c22c" />
+
+<br/>
+
+<br/>
+
+**<Step 1>:** Data Acquisition Parameters: The precise specification of the NOAA data source (Station ID 8723214), data product (water_temperature), and format (JSON) established clear technical boundaries for the initial environmental assessment phase, eliminating ambiguity in data source selection.
+
+**<Step 2>:** Character-Constrained Optimization: The explicit 160-character limitation for the SMS alert created a well-defined technical constraint that forced algorithmic optimization of message content while maintaining critical information density.
+
+<br/>
+
+### CLAUDE AI STEP 1 ###
+
+<img width="761" alt="Workflow Step 1" src="https://github.com/user-attachments/assets/3c41de7c-b9d5-43e9-ae65-2a6d4bc79774" />
+
+<br/>
+
+<br/>
+
+Immediately, you notice how easily and much faster Claude AI communicated via the NOAA tides and currents API using the JSON script. This technical determination included:
+
+1. Comparative Threshold Analysis: The 83.7°F reading exceeds the established 80°F threshold for accelerated seaweed growth by 4.6%, placing it firmly within high-probability conditions for bloom formation.
+  
+2. Temporal Context Implementation: The May 15th timestamp positions this reading during a seasonal transition period known to correlate with increased nutrient availability, further amplifying bloom probability when combined with elevated temperatures.
+  
+3. Geospatial Parameter Consideration: Virginia Key’s position (25.7314, -80.1618) represents a monitoring location with established historical correlation to broader coastal conditions affecting Miami’s recreational beaches.
+
+<br/>
+
+### CLAUDE AI STEP 2 ###
+
+
+<img width="769" alt="Workflow Step 2" src="https://github.com/user-attachments/assets/b2548090-cc12-4bc4-b542-f45c66b8f7e6" />
+
+<br/>
+
+<br/>
+
+Claude AI utilized a multi-layered processing pipeline optimized for both information density and character conservation to generate the following 160-character SMS text alert:
+
+_ALERT: High-risk for seaweed bloom at Virginia Key today! Avoid respiratory/skin irritation risks. Skip the beach — explore Vizcaya Museum’s gardens instead! #StaySafe_
+
+Note that I did not recommend an alternative vacation activity. Claude AI made the determination. If there are specific city-sponsored events, including that information in the prompt would be helpful. Another step could include iterating on the text message to note Miami Beach as the location versus the Virginia Key station.
+
+**Conclusion of AI Workflow**  Once the integration between Claude AI and the NOAA Tides and Currents MCP Server is established, you can begin ideation and testing scenarios. This specific AI Workflow was easier to create than expected.  The next goal is to automate the alerts using and AI Agent.
 
 <br/>
 
